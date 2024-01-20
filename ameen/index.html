@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <!-- MOBILE NAVIGATION -->
+        <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+            <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="toggleNavigation()">&#9776;</a>
+        </div>
+        <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+            <a href="#about"
+                class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+                onclick="toggleNavigation()">ABOUT</a>
+            <a href="#resume"
+                class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+                onclick="toggleNavigation()">RESUME</a>
+            <a href="#contact"
+                class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+                onclick="toggleNavigation()">CONTACT</a>
+        </div>
+
+        <!-- SOCIAL SECTION -->
+        <section class="image-section w3-quarter w3-fixed w3-padding-small">
+            <!--IMAGE/AVATAR-->
+            <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;" />
+            <!--SCIAL NETWORK BUTTONS-->
+            <div class="links w3-margin-top w3-padding-small">
+                <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/Armostrike"
+                    target="_blank">
+                    <i data-feather="github"></i>
+                </a>
+                <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/aminuxameen/"
+                    target="_blank">
+                    <i data-feather="instagram"></i>
+                </a>
+                <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://twitter.com/SayadAmeen13747"
+                    target="_blank">
+                    <i data-feather="twitter"></i>
+                </a>
+                <a class="icon-link w3-text-sand w3-hover-text-amber"
+                    href="https://www.linkedin.com/in/ameen-sayed-27a394227/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank">
+                    <i data-feather="linkedin"></i>
+                </a>
+            </div>
+            <!--CV DOWNLOAD BUTTON-->
+            <div class="w3-container w3-padding-16">
+                <a href="./resume.pdf"
+                    class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large"
+                    target="_blank" download="resume.pdf">
+                    <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+                    <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+                </a>
+            </div>
+        </section>
+
+        <!--CV CONTENT SECTION-->
+        <section class="w3-threequarter w3-padding-large w3-right">
+            <!--DESKTOP NAVIGATION-->
+            <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+                <a href="#home"
+                    class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM
+                    VITAE</a>
+                <a href="#contact"
+                    class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+                    style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+                <a href="#resume"
+                    class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+                    style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+                <a href="#about"
+                    class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+                    style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+            </div>
+            <div class="content-container w3-margin-top-2">
+                <!--HOME SECTION-->
+                <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+                    <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your
+                        struggles, you overcome them."</p>
+                    <h1> SayyadAmeenulla A B (22)</h1>
+                    <h2>Traniee Engineer</h3>
+                        <p></p>
+                </div>
+
+                <!--ABOUT SECTION-->
+                <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                    <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+                    <p class="w3-margin-top-2">
+                        🚀 Hello, I'm Sayyad Ameenulla A B – a young and enthusiastic engineer with a
+                        passion for learning and a keen interest in exploring the frontiers of technology.
+                        Eager to tackle challenges and fix bugs, I thrive on the excitement of troubleshooting
+                        and finding innovative solutions.
+                    </p>
+                    <p class="">
+                        🛠️ As a dedicated professional, I am committed to continuous learning and pushing the
+                        boundaries of my expertise. My journey in engineering is fueled by a curiosity to explore
+                        emerging technologies and contribute to groundbreaking innovations.
+                    </p>
+                    <p class="">
+                        💡 Whether it's deciphering complex problems,
+                        embracing new technologies, or collaborating on
+                        innovative projects, I am driven by a desire to make
+                        a meaningful impact.
+                        I bring a fresh perspective, a hunger for knowledge,
+                        and a proactive approach to every endeavor.
+                        🌐 Let's connect and explore opportunities where
+                        I can contribute my skills and passion for
+                        innovationto make a positive impact on the world.
+                    </p>
+                </div>
+
+                <!--RESUME-->
+                <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+                    <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+                    <div class="w3-container w3-margin-top-2 w3-cursive">
+
+                        <!--EMPLOYMENT HISTORY SECTION-->
+                        <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+                        <div class="">
+                            <h4>Amsa Embedded Solutions</h4>
+                            <p>Augest 2023 - September</p>
+                            <ul class="w3-ul" style="font-weight: 500;">
+                                <li>Ensured that published content meets brand guidelines and overall communication
+                                    styles</li>
+                                <li>Built relations with the online community</li>
+                                <li>Implemented social media strategies to increase engagement and followers</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h4>TNSIF Capegemini foundation</h4>
+                            <p>July 2023 - October</p>
+                            <ul class="w3-ul" style="font-weight: 500;">
+                                <li>Ensured that audience growth rate is in increase through social networs</li>
+                                <li>Managed social media campaigns for various social media platforms to align with
+                                    marketing strategies</li>
+                                <li>Monitored and provided feedback on engagement/conversation via social media channels
+                                    to leadership</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h4>PerfecteLearning </h4>
+                            <p>January 2014 - April 2016 </p>
+                            <ul class="w3-ul" style="font-weight: 500;">
+                                <li>Organized and managed community events to boost brand awareness</li>
+                                <li>Monitored, tracked and reported on feedback and online reviews</li>
+                                <li>Provided engaging text, image and video content for all social media and
+                                    professional accounts</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!---EDUCATION SECTION-->
+                    <div class="w3-container w3-margin-top-2 w3-cursive">
+                        <h3 class="w3-border-amber">MY EDUCATION</h3>
+                        <h4>🎓 Tontadarya College of Engineering - India</h4>
+                        <p>Bachelor of Engineering - BE, Electrical, Electronics and Communications Engineering</p>
+                        <p>September 2019 - Present </p>
+                        <strong>
+                            <p>Grade 8.1 CGPA</p>
+                            <p>Placement Co-ordinator </p>
+                            <p>Cultural Fest organizer</p>
+                        </strong>
+                        <h4>Govt. PU college RN Shetty</h4>
+                        <p>June 2017 - march 2019</p>
+                        <strong>
+                            <p>Grade XII 95% </p>
+                        </strong>
+
+                        <p>Pre University </p>
+
+                        <h4>Om English Medium High school</h4>
+                        <p>June 2006 - mar 2017</p>
+                        <strong>
+                            <p>Grade X 79.68% </p>
+                        </strong>
+                        <p>Primary and High Schooling </p>
+
+                    </div>
+
+                    <!--SKILLS SECTION-->
+                    <div class="w3-container w3-margin-top-2 w3-cursive">
+                        <h3 class="w3-border-amber">MY SKILLS</h3>
+                        <!--SOFT SKILLS-->
+                        <h4>Soft skills</h4>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <ul>
+                                <li><strong>Good Communication Skills:</strong> Proven ability to articulate ideas with
+                                    clarity and precision. Confident presenter with a strong presence in front of
+                                    diverse audiences.</li>
+
+                                <li><strong>Research and Process Improvement:</strong> Innate talent for in-depth
+                                    investigation and research. Demonstrated capacity to identify and implement
+                                    improvements, offering strategic solutions for organizational advancement.</li>
+
+                                <li><strong>Content Creation and Management:</strong> Proficient in developing and
+                                    delivering engaging content. Successfully provided compelling text, image, and video
+                                    content for both social media and professional platforms.</li>
+                            </ul>
+
+                        </ul>
+                        <!--TECHNICAL SKILLS-->
+                        <h4>Technical skills</h4>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <li>I have a great experience with MS Office tools</li>
+                            <ul>
+                                <li><strong>Real-Time Operating Systems (RTOS)</strong></li>
+                                <li><strong>Automotive Electrical Systems</strong></li>
+                                <li><strong>Electrical Engineering</strong></li>
+                                <li><strong>Electronic Engineering</strong></li>
+                                <li><strong>Embedded System Design</strong></li>
+                                <li><strong>Python</strong></li>
+                                <li><strong>Core Java</strong></li>
+                                <li><strong>Linux Environment</strong></li>
+                                <li><strong>Assembly Language Programming</strong></li>
+                                <li><strong>Microcontrollers</strong></li>
+                            </ul>
+                        </ul>
+
+                        <!--TECHNICAL SKILLS-->
+                        <h3>My Projects</h3>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <!--PROJECT-3-->
+                            <h4>Engine Locking System Through Alcohol Detection usins IIDs</h4>
+                            <ul class="w3-ul" style="font-weight: 500; line-height:0.7;">
+                                <li>Project Role & Responsibilities: Project Leader</li>
+                                <li>What I learned in the project:IIDs,sensor how they work and how to coordinate</li>
+
+
+                            </ul>
+                            <!--PROJECT-4-->
+                            <h4>Placement Management System Using Spring tool suite</h4>
+                            <ul class="w3-ul" style="font-weight: 500; line-height:0.7;">
+                                <li>Project Role & Responsibilities: Project Leader</li>
+                                <li>What I learned in the project: Core Java JDBC/ODBC dependencies POST requests</li>
+
+                            </ul>
+                            <!--PROJECT-5-->
+                            <h4>Industrial Safety Projcect </h4>
+                            <ul class="w3-ul" style="font-weight: 500; line-height:0.7;">
+
+                                <li>Project Role & Responsibilities: Project Leader</li>
+                                <li>What I learned in the project: ESp3226 wifi module operations</li>
+                            </ul>
+                            <!--PROJECT-6-->
+                            <h4>Gas Leckage Detection through mq3 sensor</h4>
+                            <ul class="w3-ul" style="font-weight: 500; line-height:0.7;">
+                                <li>Project Role & Responsibilities:Team Leader</li>
+                                <li>What I learned in the project: Microcontrollers Programming and sensor readings</li>
+                            </ul>
+                            <!--PROJECT-7-->
+                            <h4>Hospital Management System </h4>
+                            <ul class="w3-ul" style="font-weight: 500; line-height:0.7;">
+                                <li>Project Role & Responsibilities:Team Lader(4th rank in National Level Hackathon)
+                                </li>
+                                <li>What I learned in the project: CURD operations</li>
+
+
+                            </ul>
+                            <!--PROJECT-8-->
+                            <h4>Smart Traffic Controll System using Machine learning concepts</h4>
+                            <ul class="w3-ul" style="font-weight: 500; line-height:0.7;">
+                                <li>Project Role & Responsibilities: Team leader</li>
+                                <li>What I learned in the project:learnt machine learning models and implement using
+                                    python</li>
+                            </ul>
+
+                            <h3>My Internship Certificates</h3>
+                            <ul class="w3-ul" style="font-weight: 500;">
+                                <h5><a href="https://drive.google.com/file/d/1IS75BHOJ1MYhisUrAjJqhiYeR0KDnlZK/view?usp=drive_link"
+                                        target="_blank">VLSI Internship Certificate</a></h5>
+
+                                <h5><a href="https://drive.google.com/file/d/1I3fIHVgatuoX0vfmFHKcGw2aTyWFRzMs/view?usp=drive_link"
+                                        target="_blank">Python Machine Learning
+                                        Internship
+                                        Certificate</a></h5>
+
+                                <h5><a href="https://drive.google.com/file/d/1IIMYklO17WnUpjPa_fD8WMNg7RsTKC6L/view?usp=drive_link"
+                                        target="_blank">Amsa Embedded Design
+                                        Internship
+                                        Certificate</a></h5>
+
+                                <h4>My Course Certificates</h4>
+                                <ul class="w3-ul" style="font-weight: 500;">
+                                    <h5><a href="https://www.linkedin.com/learning/certificates/80e78f6d9a036054c9c47ff9fa01af3ad9f79de236b7d93873f4da9dc5a78706?trk=share_certificate"
+                                            target="_blank"> Learning Cloud computing core Concepts </a></h5>
+
+                                    <h5><a href="https://www.linkedin.com/learning/certificates/3014fb3db4e4dc00718eea2832d3db878389b12e2bcb1e2a218d643ef30d3fd3?trk=share_certificate"
+                                            target="_blank">Learning Linux Command Line</a></h5>
+                                </ul>
+
+
+
+                    </div>
+
+                </div>
+
+                <!--INTERESTS SECTION-->
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+                    <ul class="w3-ul" style="font-weight: 500;">
+                        <li>Interacting with new people</li>
+                        <li>Physical Activities like jogging,outdoor workouts</li>
+                    </ul>
+                </div>
+
+                <!--REFERENCE SECTION
+                    <div class="w3-container w3-margin-top-2 w3-cursive">
+                        <h3 class="w3-border-amber">MY REFERENCES</h3>
+                        <h4>Jane Doe, CEO at Company-Z</h4>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <li>+0123456789</li>
+                            <li>janedoe@companyz.com</li>
+                        </ul>
+                        <h4>Margaret Johnson, Manager at Company-Y</h4>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <li>+9876543210</li>
+                            <li>mjohnson@companyy.com</li>
+                        </ul>
+                    </div>
+                    -->
+            </div>
+
+            <!--CONTACT SECTION-->
+            <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT
+                    DETAILS</h3>
+                    <div class="w3-margin-top-2" style="font-weight: 500;">
+                        <p>Name: Sayyad Ameen</p>
+                        <p>Adress: Dharwad-03</p>
+                        <p>Phone number: +91 9606725257</p>
+                        <p>E-mail: ameensayedtheastronomer@gmail.com</p>
+                    </div>
+            </div>
+
+            <!--FOOTER-->
+            <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+            <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+                <p>© 2024 - Ameen</p>
+
+
+                <!-- End footer -->
+            </footer>
+
+            <!--END OF CV SECTION-->
+        </section>
+    </section>
+    <script>
+        // Function to toggle mobile navigation
+        function toggleNavigation() {
+            let nav = document.getElementById("mobile-nav");
+            if (nav.classList.contains('w3-show')) {
+                nav.classList.remove('w3-show');
+            } else {
+                nav.classList.add('w3-show');
+            }
+        }
+    </script>
+    <script>
+        // Script to load feather icons
+        feather.replace()
+    </script>
+</body>
+
+</html>
